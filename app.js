@@ -1,6 +1,8 @@
 /* eslint-disable global-require */
 /* eslint-disable import/no-dynamic-require */
-require('dotenv').config();
+require('dotenv').config({ path: './config.env' });
+
+console.log('MONGO_URI:', process.env.MONGO_URI);
 
 const fs = require('fs');
 const { createServer } = require('@app-core/server');
@@ -18,7 +20,7 @@ const server = createServer({
   enableCors: true,
 });
 
-const ENDPOINT_CONFIGS = [];
+const ENDPOINT_CONFIGS = [{ path: './endpoints/reqline/' }];
 
 function logEndpointMetaData(endpointConfigs) {
   const endpointData = [];

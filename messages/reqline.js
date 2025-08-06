@@ -1,0 +1,16 @@
+module.exports = {
+  MISSING_REQLINE: 'Missing reqline in request body',
+  MISSING_REQUIRED_KEYWORD: 'Missing required HTTP or URL keyword',
+  MISSING_HTTP_KEYWORD: 'Missing required HTTP keyword',
+  MISSING_URL_KEYWORD: 'Missing required URL keyword',
+  INVALID_HTTP_METHOD: 'Invalid HTTP method. Only GET and POST are supported',
+  HTTP_FIRST: 'HTTP keyword must be first',
+  URL_SECOND: 'URL keyword must be second',
+  INVALID_SPACING: 'Invalid spacing around pipe delimiter or keyword',
+  INVALID_QUERY_JSON: 'Invalid JSON format in QUERY section',
+  INVALID_HEADERS_JSON: 'Invalid JSON format in HEADERS section',
+  INVALID_BODY_JSON: 'Invalid JSON format in BODY section',
+  KEYWORDS_UPPERCASE: 'Keywords must be uppercase',
+  UNKNOWN_KEYWORD: 'Unknown keyword provided',
+  INTERNAL_REQ_ERROR: 'Interval server error',
+};

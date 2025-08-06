@@ -1,5 +1,4 @@
 # IDE
-.vscode
 
 # FRAMEWORK
 .node-gyp
@@ -19,3 +18,7 @@ endpoint-data
 
 # OS
 .DS_Store
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
